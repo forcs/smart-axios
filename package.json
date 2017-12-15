@@ -1,0 +1,65 @@
+{
+  "name": "smart-axios",
+  "version": "0.1.0",
+  "description": "the smarter axios",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run rollup && npm run rollup-prod",
+    "rollup": "node build/rollup.js",
+    "rollup-prod": "NODE_ENV=production node build/rollup.js",
+    "test": "BABEL_ENV=test mocha --require babel-register --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forcs/smart-axios.git"
+  },
+  "keywords": [
+    "axios",
+    "net",
+    "restful",
+    "http",
+    "ajax"
+  ],
+  "author": "Forcs Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forcs/smart-axios/issues"
+  },
+  "homepage": "https://github.com/forcs/smart-axios#readme",
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "dependencies": {
+    "axios": "^0.17.1",
+    "qs": "^6.5.1",
+    "query-string": "^5.0.1"
+  },
+  "peerDependencies": {
+    "axios": "^0.17.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chalk": "^2.3.0",
+    "mocha": "^4.0.1",
+    "mochawesome": "^3.0.0",
+    "ora": "^1.3.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.52.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
+}

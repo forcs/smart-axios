@@ -1,0 +1,250 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-12-15T09:25:55.313Z",
+    "end": "2017-12-15T09:25:55.326Z",
+    "duration": 13,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "1c541c80-66f6-47e9-93a4-d6d24f6e927d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "22d63998-5b93-4a10-9b87-36bd613fb2a4",
+        "title": "test module options-merger",
+        "fullFile": "/Users/zhangguoyu/Develope/NodeWorkspace/smart-axios/test/options-merger.test.js",
+        "file": "/test/options-merger.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "merge",
+            "fullTitle": "test module options-merger merge",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var merged = (0, _optionsMerger2.default)({ url: 'user', params: { uid: '1234' } }, { a: 1 });\nmerged.should.have.property('a').with.equal(1);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5f8ec783-b67b-4355-94b6-0c3423ee0f6d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "5f8ec783-b67b-4355-94b6-0c3423ee0f6d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "a6c0c271-64b6-41ad-9e74-f4bb3ba7cd91",
+        "title": "test module restful-resolver",
+        "fullFile": "/Users/zhangguoyu/Develope/NodeWorkspace/smart-axios/test/restful-resolver.test.js",
+        "file": "/test/restful-resolver.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "url /user/1234",
+            "fullTitle": "test module restful-resolver url /user/1234",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "assert.equal((0, _restfulResolver2.default)({ url: '/user/:uid', params: { uid: '1234' } }), '/user/1234');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "58a66edf-f83c-4d97-ad0e-74a7bd03a7aa",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "58a66edf-f83c-4d97-ad0e-74a7bd03a7aa"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "818b86b2-c9f8-43b8-afd4-9c4aad33549b",
+        "title": "test module utils",
+        "fullFile": "/Users/zhangguoyu/Develope/NodeWorkspace/smart-axios/test/utils.test.js",
+        "file": "/test/utils.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "e21ef139-246d-4bc0-b5f0-a9cebed520a4",
+            "title": "test utils.isFunc()",
+            "fullFile": "/Users/zhangguoyu/Develope/NodeWorkspace/smart-axios/test/utils.test.js",
+            "file": "/test/utils.test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "utils.isFunc(function) should return true",
+                "fullTitle": "test module utils test utils.isFunc() utils.isFunc(function) should return true",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t = function t() {};\nassert.equal(utils.isFunc(t), true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "116b0b8a-86e6-4ab8-86bc-3e676b987606",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "116b0b8a-86e6-4ab8-86bc-3e676b987606"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "217e727b-95c4-4e53-89a3-616f7b00e127",
+            "title": "test utils.isArray()",
+            "fullFile": "/Users/zhangguoyu/Develope/NodeWorkspace/smart-axios/test/utils.test.js",
+            "file": "/test/utils.test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "utils.isArray(array) should return true",
+                "fullTitle": "test module utils test utils.isArray() utils.isArray(array) should return true",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t = function t() {};\nassert.equal(utils.isArray(t), false);\nassert.equal(utils.isArray([]), true);\nassert.equal(utils.isArray({}), false);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "2c5c0ed3-4e78-4aa7-9b8f-d46da0d79734",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "2c5c0ed3-4e78-4aa7-9b8f-d46da0d79734"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "4f953cf9-dca0-4587-8b48-6db7fe78575b",
+            "title": "test utils.isObject()",
+            "fullFile": "/Users/zhangguoyu/Develope/NodeWorkspace/smart-axios/test/utils.test.js",
+            "file": "/test/utils.test.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "utils.isArray(array) should return true",
+                "fullTitle": "test module utils test utils.isObject() utils.isArray(array) should return true",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t = function t() {};\nassert.equal(utils.isObject(t), false);\nassert.equal(utils.isObject([]), false);\nassert.equal(utils.isObject({}), true);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "b1223580-d328-4a9d-9498-51270d9d7a15",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "b1223580-d328-4a9d-9498-51270d9d7a15"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2017
+}
